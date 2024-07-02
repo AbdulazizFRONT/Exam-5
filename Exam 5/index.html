@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam 5</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="signup-form">
+            <h2>Sign Up</h2>
+            <label for="new-username">Username:</label>
+            <input type="text" id="new-username"><br><br>
+            <label for="new-password">Password:</label>
+            <input type="password" id="new-password"><br><br>
+            <button onclick="signup()">Sign Up</button>
+        </div>
+        <div id="login-form" style="display: none;">
+            <h2>Login</h2>
+            <label for="username">Username:</label>
+            <input type="text" id="username"><br><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password"><br><br>
+            <button onclick="login()">Sing in</button>
+        </div>
+        <div id="question-form" style="display: none;">
+            <h2>Ask a Question</h2>
+            <button onclick="askQuestion()">Задайте вопрос JS</button>
+            <div class="questions" id="questions"></div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
